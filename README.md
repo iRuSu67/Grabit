@@ -15,10 +15,32 @@ Open a terminal in this folder and run:
 pip install -r requirements.txt
 ```
 
-### 3. Run the app
-```
+### 3. Run the Desktop App
+```bash
 python downloader.py
 ```
+
+### 4. Run the Mobile/Modern UI
+If you want to try the modern Flet-based interface (which also serves as the mobile version):
+```bash
+flet run main.py
+```
+
+---
+
+## 📱 Android/Mobile Support (Flet)
+
+This project includes a secondary frontend (`main.py` / `flet_app.py`) built with **Flet**, specifically designed for mobile layouts.
+
+### How to Build the Android APK:
+1. Ensure you have the [Flutter SDK](https://docs.flutter.dev/get-started/install) and Android Studio installed.
+2. In your terminal, run:
+   ```bash
+   flet build apk
+   ```
+3. Once complete, you will find your compiled APK. Transfer it to your Android device to install and use!
+
+*(Note: Because mobile platforms generally lack `ffmpeg` by default, this mobile version automatically downloads pre-merged `.mp4` video files to seamlessly ensure playback on your device.)*
 
 ---
 
